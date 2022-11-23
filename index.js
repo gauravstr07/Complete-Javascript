@@ -1,9 +1,25 @@
-const myArray = [];
+const myObj = {
+  name: "Gaurav",
+  email: "gauravstr05@gmail.com",
+  age: 26,
+};
 
-myArray[0] = "Gaurav";
-myArray[1] = 2680;
-myArray[2] = "Akshu";
+const anotherObj = {
+  alive: true,
+  wifeAge: 23,
+  hobbies: ["Coocking", "Drowing", "Well-Settle"],
+  beverage: {
+    morning: "Coffie",
+    night: "Milk",
+    timepass: "Sirioul",
+    time: "3hr",
+  },
+  action: function () {
+    return `Time for make ${this.beverage.morning}`;
+  },
+};
 
-myArray.unshift("Love you");
+console.log(anotherObj.action());
 
-console.log(myArray)
+
+

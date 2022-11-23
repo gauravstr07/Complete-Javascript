@@ -1,25 +1,26 @@
-const myObj = {
-  name: "Gaurav",
-  email: "gauravstr05@gmail.com",
-  age: 26,
-};
-
-const anotherObj = {
-  alive: true,
-  wifeAge: 23,
-  hobbies: ["Coocking", "Drowing", "Well-Settle"],
-  beverage: {
-    morning: "Coffie",
-    night: "Milk",
-    timepass: "Sirioul",
-    time: "3hr",
+const vahicle = {
+  wheels: 4,
+  engine: function () {
+    return "Vrooooommm...";
   },
-  action: function () {
-    return `Time for make ${this.beverage.morning}`;
+  model: {
+    color: "Red",
+    brand: "Tata",
   },
 };
 
-console.log(anotherObj.action());
+const truck = Object.create(vahicle);
+truck.door = 2;
+//console.log(truck.model);
 
-
+const car = Object.create(vahicle);
+car.door = 4;
+car.model = {
+  color: "Black",
+  brand: "Ferrari",
+};
+car.engine = function () {
+  return "Booommmbooomm";
+};
+console.log(car.engine());
 

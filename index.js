@@ -1,8 +1,9 @@
-"Gaurav".toUpperCase();
-Math.random();
+const myArray = [];
 
-function sum(num1, num2) {
-  return num1 + num2;
-}
+myArray[0] = "Gaurav";
+myArray[1] = 2680;
+myArray[2] = "Akshu";
 
-console.log(sum(2 , 6));
+myArray.unshift("Love you");
+
+console.log(myArray)

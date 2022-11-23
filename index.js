@@ -1,10 +1,8 @@
-let name = "Gaurav";
-let counter = 0;
-let myLetter;
+"Gaurav".toUpperCase();
+Math.random();
 
-while (true) {
-  myLetter = name[counter];
-  console.log(myLetter);
-  if (myLetter === "v") break;
-  counter++;
+function sum(num1, num2) {
+  return num1 + num2;
 }
+
+console.log(sum(2 , 6));
